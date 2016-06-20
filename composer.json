@@ -36,7 +36,8 @@
         "drupal/migrate_tools": "2.0.x-dev",
         "drupal/migrate_upgrade": "2.0.x-dev",
         "drupal/profile": "1.0.x-dev",
-        "drupal/state_machine": "1.0.x-dev"
+        "drupal/state_machine": "1.0.x-dev",
+        "phing/phing": "^2.14"
     },
     "require-dev": {
         "behat/mink": "~1.7",

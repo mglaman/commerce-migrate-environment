@@ -54,8 +54,7 @@
     "prefer-stable": true,
     "autoload": {
          "classmap": [
-             "scripts/composer/ScriptHandler.php",
-             "scripts/project/Environment.php"
+             "scripts/composer/ScriptHandler.php"
          ]
     },
     "scripts": {

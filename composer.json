@@ -5,7 +5,7 @@
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "Matt Glamany",
+            "name": "Matt Glaman",
             "role": ""
         }
     ],
@@ -32,7 +32,9 @@
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drupal/migrate_tools": "3.x-dev",
         "drupal/migrate_upgrade": "3.x-dev",
-        "phing/phing": "^2.14"
+        "phing/phing": "^2.14",
+        "drupal/admin_toolbar": "^1.19",
+        "drupal/swiftmailer": "^1.0@beta"
     },
     "require-dev": {
         "behat/mink": "~1.7",

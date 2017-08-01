@@ -753,11 +753,11 @@ if (empty($_SERVER['PLATFORM_DOCKER'])) {
   $port = trim(shell_exec($cmd));
 
   // Default config within Docker container.
-  $databases['default']['default']['host'] = 'commerce2x-migrate.dev';
+  $databases['default']['default']['host'] = '127.0.0.1';
   $databases['default']['default']['port'] = $port;
-  $databases['default']['ck2_migrate']['host'] = 'commerce2x-migrate.dev';
+  $databases['default']['ck2_migrate']['host'] = '127.0.0.1';
   $databases['default']['ck2_migrate']['port'] = $port;
-  $databases['default']['uc6_migrate']['host'] = 'commerce2x-migrate.dev';
+  $databases['default']['uc6_migrate']['host'] = '127.0.0.1';
   $databases['default']['uc6_migrate']['port'] = $port;
 }
 $settings['install_profile'] = 'commerce_base';

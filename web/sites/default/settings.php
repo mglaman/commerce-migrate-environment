@@ -749,7 +749,7 @@ $databases['default']['uc6_migrate'] = array(
 );
 
 if (empty($_SERVER['PLATFORM_DOCKER'])) {
-  $cmd = "docker inspect --format='{{(index (index .NetworkSettings.Ports \"3306/tcp\") 0).HostPort}}' commercemigrateenvironment_mariadb_1";
+  $cmd = "docker inspect --format='{{(index (index .NetworkSettings.Ports \"3306/tcp\") 0).HostPort}}' commerce-migrate-environment_mariadb_1";
   $port = trim(shell_exec($cmd));
 
   // Default config within Docker container.

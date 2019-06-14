@@ -1,12 +1,12 @@
 phpfpm:
     command: 'php-fpm --allow-to-run-as-root'
-    image: mglaman/platform-docker:7.0-fpm
+    image: mglaman/platform-docker:7.1-fpm 
     volumes: ['./conf/fpm.conf:/usr/local/etc/php-fpm.conf', './:/var/app:cached', './conf/php.ini:/usr/local/etc/php/conf.d/local.ini']
     links: [mariadb]
     environment: { PLATFORM_DOCKER: commerce2x, PHP_IDE_CONFIG: serverName=commerce2x-migrate.dev }
 mariadb:
     command: 'mysqld --verbose'
-    image: mariadb
+    image: mariadb:10.2
     ports: ['3306']
     volumes: ['./conf/mysql.cnf:/etc/mysql/my.cnf', './db-seeds:/docker-entrypoint-initdb.d/']
     environment: { MYSQL_DATABASE: data, MYSQL_USER: mysql, MYSQL_PASSWORD: mysql, MYSQL_ALLOW_EMPTY_PASSWORD: 'yes', MYSQL_ROOT_PASSWORD: 'root' }

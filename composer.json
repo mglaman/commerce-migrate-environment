@@ -24,26 +24,20 @@
         "composer/installers": "^1.2",
         "drupal-composer/drupal-scaffold": "^2.2",
         "cweagans/composer-patches": "^1.0",
-        "drush/drush": "^8.1",
-        "drupal/core": "^8.2",
-        "drupal/console": "~0.10",
+        "drush/drush": "^9.1",
+        "drupal/core": "^8.7",
+        "drupal/console": "^1",
         "drupal/commerce": "2.x-dev",
         "drupal/commerce_migrate": "2.x-dev",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
-        "drupal/migrate_tools": "3.x-dev",
-        "drupal/migrate_upgrade": "3.x-dev",
+        "drupal/migrate_tools": "^4",
+        "drupal/migrate_upgrade": "^3",
         "phing/phing": "^2.14",
         "drupal/admin_toolbar": "^1.19",
         "drupal/swiftmailer": "^1.0@beta"
     },
     "require-dev": {
-        "behat/mink": "~1.7",
-        "behat/mink-goutte-driver": "~1.2",
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8",
-        "symfony/css-selector": "~2.8"
+        "webflo/drupal-core-require-dev": "*"
     },
     "conflict": {
         "drupal/drupal": "*"
